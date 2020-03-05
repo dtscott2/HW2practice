@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="746.0" style="-fx-background-color: #02212b#02212b; -fx-border-color: #25424c#25424c; -fx-border-radius: 9; -fx-border-width: 1.5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+
+      <JFXButton fx:id="createDatabase" alignment="TOP_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="127.0" prefHeight="27.0" prefWidth="167.0" style="-fx-background-color: lightblue;" text="Create New Database" textFill="#08526f" />
+      <Label fx:id="alertLabel" layoutX="14.0" layoutY="358.0" prefHeight="150.0" prefWidth="167.0" textFill="#dd0a0a" wrapText="true" />
+      <JFXButton fx:id="loadData" alignment="TOP_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="171.0" prefHeight="27.0" prefWidth="167.0" style="-fx-background-color: lightblue;" text="Load Data" textFill="#08526f" />
+      <JFXListView fx:id="studentListView" editable="true" layoutX="194.0" layoutY="53.0" opacity="0.9" prefHeight="455.0" prefWidth="537.0" style="-fx-background-color: lightgrey;" />
+      <JFXButton buttonType="RAISED" layoutX="200.0" layoutY="14.0" style="-fx-background-color: lightblue;" text="Sort by Name (A-Z)" textFill="#08526f" />
+      <JFXButton buttonType="RAISED" layoutX="388.0" layoutY="14.0" style="-fx-background-color: lightblue;" text="Sort by GPA (high - low)" textFill="#02212b" />
+      <JFXButton buttonType="RAISED" layoutX="587.0" layoutY="14.0" style="-fx-background-color: lightblue;" text="Sort by Major (A-Z)" textFill="#08526f" />
+      <Label layoutX="14.0" layoutY="335.0" text="Alerts:" textFill="#9e2d2d" underline="true" />
+      <JFXButton fx:id="deleteTable" alignment="TOP_LEFT" layoutX="14.0" layoutY="213.0" prefHeight="27.0" prefWidth="167.0" style="-fx-background-color: lightblue;" text="Delete Table" textFill="#08566f" />
+   </children>
+</AnchorPane>
