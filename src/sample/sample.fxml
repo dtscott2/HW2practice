@@ -12,9 +12,9 @@
       <Label fx:id="alertLabel" layoutX="14.0" layoutY="358.0" prefHeight="150.0" prefWidth="167.0" textFill="#dd0a0a" wrapText="true" />
       <JFXButton fx:id="loadData" alignment="TOP_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="171.0" prefHeight="27.0" prefWidth="167.0" style="-fx-background-color: lightblue;" text="Load Data" textFill="#08526f" />
       <JFXListView fx:id="studentListView" editable="true" layoutX="194.0" layoutY="53.0" opacity="0.9" prefHeight="455.0" prefWidth="537.0" style="-fx-background-color: lightgrey;" />
-      <JFXButton buttonType="RAISED" layoutX="200.0" layoutY="14.0" style="-fx-background-color: lightblue;" text="Sort by Name (A-Z)" textFill="#08526f" />
-      <JFXButton buttonType="RAISED" layoutX="388.0" layoutY="14.0" style="-fx-background-color: lightblue;" text="Sort by GPA (high - low)" textFill="#02212b" />
-      <JFXButton buttonType="RAISED" layoutX="587.0" layoutY="14.0" style="-fx-background-color: lightblue;" text="Sort by Major (A-Z)" textFill="#08526f" />
+      <JFXButton fx:id="ageFilter" buttonType="RAISED" layoutX="200.0" layoutY="14.0" style="-fx-background-color: lightblue;" text="FIlter by Age (&lt;30)" textFill="#08526f" />
+      <JFXButton fx:id="gpaFilter" buttonType="RAISED" layoutX="373.0" layoutY="14.0" style="-fx-background-color: lightblue;" text="Filter by GPA (&lt;3.0)" textFill="#02212b" />
+      <JFXButton fx:id="majorFilter" buttonType="RAISED" layoutX="550.0" layoutY="14.0" style="-fx-background-color: lightblue;" text="Filter by Major (Computer)" textFill="#08526f" />
       <Label layoutX="14.0" layoutY="335.0" text="Alerts:" textFill="#9e2d2d" underline="true" />
       <JFXButton fx:id="deleteTable" alignment="TOP_LEFT" layoutX="14.0" layoutY="213.0" prefHeight="27.0" prefWidth="167.0" style="-fx-background-color: lightblue;" text="Delete Table" textFill="#08566f" />
    </children>
