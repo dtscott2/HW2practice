@@ -64,19 +64,26 @@ public class Controller implements Initializable {
                         alertLabel.setText("TABLE ALREADY EXISTS, NOT CREATED");
                     }
 
-                    var student1 = new Student();
+                    /*var student1 = new Student();
                     student1.name = "Steve Vai";
                     student1.id = UUID.randomUUID();
                     student1.age = 33;
                     student1.major = "Biology";
-                    student1.GPA = 3.4;
+                    student1.GPA = 3.4;*/
 
 
-                    stmt.executeUpdate("INSERT INTO StudentTable VALUES" + "('" +student1.name + "', '"+student1.id.toString() +"', "+student1.age +", '"+student1.major+"', "+student1.GPA+ ")");
-                    System.out.println("a");
+                    stmt.executeUpdate("INSERT INTO StudentTable VALUES" + "('Steve Vai', '"+UUID.randomUUID().toString()+"', 33, 'Biology', 3.4)");
+
+                    stmt.executeUpdate("INSERT INTO StudentTable VALUES" + "('Joe', '"+UUID.randomUUID().toString()+"', 33, 'Biology', 3.4)");
+
+                    stmt.executeUpdate("INSERT INTO StudentTable VALUES" + "('Angus', '"+UUID.randomUUID().toString()+"', 33, 'Biology', 3.4)");
+
+                    stmt.executeUpdate("INSERT INTO StudentTable VALUES" + "('Buckethead', '"+UUID.randomUUID().toString()+"', 33, 'Biology', 3.4)");
+
+                    stmt.executeUpdate("INSERT INTO StudentTable VALUES" + "('EVH', '"+UUID.randomUUID().toString()+"', 33, 'Biology', 3.4)");
 
 
-                    var student2 = new Student();
+                    /*var student2 = new Student();
                     student2.name = "Stevie Ray Vaughan";
                     student2.id = UUID.randomUUID();
                     student2.age = 23;
@@ -175,7 +182,7 @@ public class Controller implements Initializable {
 
                     stmt.executeUpdate("INSERT INTO StudentTable VALUES" + "('" +student10.name + "', '"+student10.id.toString() +"', "+student10.age +", '"+student10.major+"', "+student10.GPA+ ")");
 
-                    System.out.println("j");
+                    System.out.println("j");*/
 
                     System.out.println("TABLE FILLED");
                     alertLabel.setText("TABLE FILLED");
